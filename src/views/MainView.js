@@ -1,16 +1,24 @@
 import App  from '../services/App.js';
 
-import Home from './pages/Home.js';
-import About from './pages/About.js';
+import MainContent from './pages/MainContent.js';
 
-var mainView = App.views.create(
-  '.view-main',
-  {
-    routes: [
-      About,
-      Home
-    ]
+var MainView = {
+  _view: null,
+  init: function () {
+    if (this._view) {
+      return;
+    }
+
+    this._view = App.views.create(
+      '.view-main',
+      {
+        routes: [
+          MainContent
+        ],
+        url: '/mainContent/'
+      }
+    );
   }
-);
+};
 
-export default mainView;
+export default MainView;
