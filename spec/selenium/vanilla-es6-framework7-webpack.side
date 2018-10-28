@@ -1,0 +1,182 @@
+{
+  "id": "ce96b417-8a5b-47bd-bc5f-f5f2aa4edaf4",
+  "version": "1.1",
+  "name": "vanilla-es6-framework7-webpack",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "25e53a8a-3735-40f0-a354-0ebfb4305f01",
+    "name": "Basic functionality ",
+    "commands": [{
+      "id": "01b18433-7082-4200-b018-a3dad5c4b643",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "400x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c065001-3e9b-4fdc-b2c8-82dd726ee05b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "659c3834-e3f0-41ec-a3d6-b214ac855c96",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div.page.page-current > div.page-content > div.block > p",
+      "targets": [
+        ["css=div.page.page-current > div.page-content > div.block > p", "css"],
+        ["css=.page-current > .page-content p", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div[3]/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": "Page content goes here"
+    }, {
+      "id": "837e89d6-e6bd-415c-ac7f-fc6939369d58",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'About app')]",
+      "targets": [
+        ["linkText=About app", "linkText"],
+        ["css=div.block > a", "css"],
+        ["css=.block > a", "css:finder"],
+        ["xpath=//a[contains(text(),'About app')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[2]/div/div[3]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/about/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e390fcd1-2155-49d1-b25d-926de8d9a127",
+      "comment": "",
+      "command": "pause",
+      "target": "100",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c74e1e9-8445-496d-a119-88e282f271b5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div.page.page-current > div.page-content > div.block > p",
+      "targets": [
+        ["css=div.page.page-current > div.page-content > div.block > p", "css"],
+        ["css=.page-current > .page-content p", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div[3]/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": "About"
+    }, {
+      "id": "1c4ccade-421c-411c-a6e5-0c31ff78be3a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Home')]",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=a.link", "css"],
+        ["css=.link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/home/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b69d12eb-f96c-4321-9a75-bd6141254b7d",
+      "comment": "",
+      "command": "pause",
+      "target": "100",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e17da963-3bb5-4bb0-959b-5982a668dac3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div.page.page-current > div.page-content > div.block > p",
+      "targets": [
+        ["css=div.page.page-current > div.page-content > div.block > p", "css"],
+        ["css=.page-current > .page-content p", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div[3]/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": "Page content goes here"
+    }, {
+      "id": "6b4f0246-2e5d-4186-a56d-dc7f4885ee05",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'About')]",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=.link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[2]/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/about/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ef6e7c1-5e09-43bb-8d95-c0f459ecbed7",
+      "comment": "",
+      "command": "pause",
+      "target": "100",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "488e71b1-01b1-4c72-a5b7-7b8082a734a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div.page.page-current > div.page-content > div.block > p",
+      "targets": [
+        ["css=div.page.page-current > div.page-content > div.block > p", "css"],
+        ["css=.page-current > .page-content p", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div[3]/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": "About"
+    }, {
+      "id": "dbb7de15-37d5-4fdd-a3b7-ad6c0dd3f861",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Home')]",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=a.link", "css"],
+        ["css=.link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/home/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43e73d87-adfe-4ef5-9971-5a2d97c845cc",
+      "comment": "",
+      "command": "pause",
+      "target": "100",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84af5a83-6662-432a-b5b2-edf18c007392",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div.page.page-current > div.page-content > div.block > p",
+      "targets": [
+        ["css=div.page.page-current > div.page-content > div.block > p", "css"],
+        ["css=.page-current > .page-content p", "css:finder"],
+        ["xpath=//div[@id='app']/div[2]/div/div[3]/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": "Page content goes here"
+    }]
+  }],
+  "suites": [{
+    "id": "6db590ad-1722-46ce-8405-b1529227fd53",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["25e53a8a-3735-40f0-a354-0ebfb4305f01"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

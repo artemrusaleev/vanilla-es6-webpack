@@ -3,6 +3,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "test": "jasmine",
+    "test:side": "selenium-side-runner ./spec/selenium/vanilla-es6-framework7-webpack.side",
     "start:test": "nodemon --watch src --watch spec --exec jasmine",
     "start:dev": "webpack-dev-server --mode=development"
   },
@@ -16,11 +17,13 @@
     "@babel/runtime": "^7.1.2",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
+    "geckodriver": "^1.12.2",
     "html-webpack-plugin": "^3.2.0",
     "jasmine": "^3.2.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "nodemon": "^1.18.4",
+    "selenium-side-runner": "^3.4.2",
     "style-loader": "^0.23.1",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2",

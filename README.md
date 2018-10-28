@@ -2,7 +2,7 @@
 
 This a fork of [Rishav Sharan](https://github.com/precz/vanillajs-spa/commits?author=rishavs) project [vanillajs-spa](https://github.com/rishavs/vanillajs-spa).
 
-Added webpack build and dev server.
+Added framework7, webpack build and dev server.
 
 ## Run project dev server
 ```
@@ -23,6 +23,19 @@ In watch mode:
 ```
 npm run start:test
 ```
+
+### Selenium test
+In order to run selwnium tests dev server needs to be up:
+```
+npm run start:dev
+```
+Now selenium test runner could be execuded via:
+```
+npm run test:side
+```
+
+### Editing selenium tests
+Selenium test could be edited via [Selenium IDE](https://www.seleniumhq.org/projects/ide/).
 
 ## License (MIT)
 Copyright 2018, Paweł Preczyński
