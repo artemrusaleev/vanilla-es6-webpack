@@ -1,4 +1,4 @@
-import MainContentView from '../MainContentView.js';
+import MainContentView from '../MainContentView';
 
 export default {
   name: 'mainContent',
@@ -24,12 +24,12 @@ export default {
     </div>
   `,
   on: {
-    pageInit: function (e, page) {
+    pageInit() {
       // console.log(MainContentView.view);
-      if(MainContentView.view !== null) {
+      if (MainContentView.view !== null) {
         return;
       }
       MainContentView.init();
     },
-  }
+  },
 };

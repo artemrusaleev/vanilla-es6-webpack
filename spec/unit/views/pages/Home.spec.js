@@ -1,8 +1,8 @@
 // Tested lib
-import Home from '../../../../src/views/pages/Home.js';
+import Home from '../../../../src/views/pages/Home';
 
-describe('Home', function () {
-  it('should export properly', function () {
+describe('Home', () => {
+  it('should export properly', () => {
     expect(Home).toBeDefined();
     expect(Home.name).toBe('home');
     expect(Home.path).toBe('/home/');

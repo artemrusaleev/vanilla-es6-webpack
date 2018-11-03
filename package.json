@@ -3,7 +3,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "test": "jasmine",
-    "eslint": "eslint ./src/**/*.js ./spec/unit/**/*.js",
+    "eslint": "eslint './src/**/*.js' './spec/unit/**/*.js' --fix",
     "test:side": "selenium-side-runner ./spec/selenium/vanilla-es6-framework7-webpack.side",
     "start:test": "nodemon --watch src --watch spec --exec jasmine",
     "start:dev": "webpack-dev-server --mode=development"
