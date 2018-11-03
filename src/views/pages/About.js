@@ -1,4 +1,4 @@
-let About = {
+export default {
   name: 'about',
   path: '/about/',
   template: `
@@ -6,10 +6,9 @@ let About = {
       <div class="page-content">
         <div class="block">
           <p>About</p>
+          <a href="/home/">Home</a>
         </div>
       </div>
     </div>
     `
 }
-
-export default About;
