@@ -1,8 +1,8 @@
-import Framework7       from 'framework7';
+import Framework7 from 'framework7';
 
 export let framework7 = null;
 
-export function init () {
+export function init() {
   framework7 = new Framework7({
     // App root element
     root: '#app',
@@ -15,16 +15,14 @@ export function init () {
       swipe: 'left',
     },
     // Add default routes
-    routes: [
-      
-    ],
+    routes: [],
     // ... other parameters
   });
-};
+}
 
 export default {
-  get framework7 () {
+  get framework7() {
     return framework7;
   },
-  init
+  init,
 };

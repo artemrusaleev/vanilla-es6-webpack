@@ -1,18 +1,17 @@
 // Tested lib
-import App          from '../../../src/services/App.js';
-import {framework7, init} from '../../../src/services/App.js';
-import Framework7   from 'framework7';
+import Framework7 from 'framework7';
+import App from '../../../src/services/App';
+import { framework7, init } from '../../../src/services/App';
 
-describe('service App', function () {
-  it('should export properly', function () {
+describe('service App', () => {
+  it('should export properly', () => {
     expect(App).toBeDefined();
     expect(App.framework7).toBeDefined();
     expect(framework7).toBeDefined();
   });
 
-  describe('init', function () {
-    it('should create new Framework7 app', function () {
-
+  describe('init', () => {
+    it('should create new Framework7 app', () => {
       init();
 
       expect(framework7).not.toBe(null);
@@ -22,7 +21,7 @@ describe('service App', function () {
         name: 'My App',
         id: 'com.myapp.test',
         panel: { swipe: 'left' },
-        routes: []
+        routes: [],
       });
     });
   });

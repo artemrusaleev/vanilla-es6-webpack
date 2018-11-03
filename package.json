@@ -3,6 +3,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "test": "jasmine",
+    "eslint": "eslint ./src/**/*.js ./spec/unit/**/*.js",
     "test:side": "selenium-side-runner ./spec/selenium/vanilla-es6-framework7-webpack.side",
     "start:test": "nodemon --watch src --watch spec --exec jasmine",
     "start:dev": "webpack-dev-server --mode=development"
@@ -18,6 +19,9 @@
     "@babel/runtime": "^7.1.2",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "geckodriver": "^1.12.2",
     "html-webpack-plugin": "^3.2.0",
     "jasmine": "^3.2.0",

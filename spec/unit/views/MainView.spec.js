@@ -1,16 +1,16 @@
 // Internal deps
-import App          from '../../../src/services/App.js';
-import MainContent  from '../../../src/views/pages/MainContent.js';
+import App from '../../../src/services/App';
+import MainContent from '../../../src/views/pages/MainContent';
 
 // Tested lib
-import MainView     from '../../../src/views/MainView.js';
-import {view, init} from '../../../src/views/MainView.js';
+import MainView from '../../../src/views/MainView';
+import { view, init } from '../../../src/views/MainView';
 
-//Test helpers
-import {resetView} from '../testHelpers/viewModule';
+// Test helpers
+import { resetView } from '../testHelpers/viewModule';
 
-describe('MainView', function () {
-  it('should export properly', function () {
+describe('MainView', () => {
+  it('should export properly', () => {
     expect(MainView).toBeDefined();
 
     expect(MainView.init).toBeDefined();
@@ -22,33 +22,33 @@ describe('MainView', function () {
     expect(MainView.view).toBe(view);
   });
 
-  describe('init', function () {
+  describe('init', () => {
     let createSpy;
 
-    beforeEach(function () {
+    beforeEach(() => {
       App.init();
       createSpy = spyOn(App.framework7.views, 'create')
         .and.returnValue({});
     });
 
-    afterEach(function () {
+    afterEach(() => {
       resetView(MainView);
     });
 
-    it('should init main view', function () {
+    it('should init main view', () => {
       expect(view).toBe(null);
       init();
+
       expect(view).not.toBe(null);
       expect(createSpy).toHaveBeenCalledWith(
         '.view-main',
         {
           routes: [
-            MainContent
+            MainContent,
           ],
-          url: '/mainContent/'
-        }
+          url: '/mainContent/',
+        },
       );
     });
-
   });
 });

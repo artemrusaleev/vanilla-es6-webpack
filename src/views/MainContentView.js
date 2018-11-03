@@ -1,26 +1,26 @@
-import {framework7}  from '../services/App.js';
+import { framework7 } from '../services/App';
 
-import Home from './pages/Home.js';
-import About from './pages/About.js';
+import Home from './pages/Home';
+import About from './pages/About';
 
 export let view = null;
 
-export function init () {
+export function init() {
   view = framework7.views.create(
     '.view-main-content',
     {
       routes: [
         Home,
-        About
+        About,
       ],
-      url: '/home/'
-    }
+      url: '/home/',
+    },
   );
 }
 
 export default {
-  get view () {
+  get view() {
     return view;
   },
-  init
+  init,
 };

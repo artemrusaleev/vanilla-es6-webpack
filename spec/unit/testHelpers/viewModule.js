@@ -1,10 +1,6 @@
-import App from '../../../src/services/App.js';
+import App from '../../../src/services/App';
 
-export function resetView (viewModule) {
-  setView(viewModule, null);
-}
-
-export function setView (viewModule, value) {
+export function setView(viewModule, value) {
   let noSpy = false;
 
   if (!App.framework7) {
@@ -16,7 +12,7 @@ export function setView (viewModule, value) {
   }
   App.framework7.views.create.and.returnValue(value);
 
-  if(viewModule.init.and) {
+  if (viewModule.init.and) {
     viewModule.init.and.callThrough();
   }
 
@@ -26,13 +22,17 @@ export function setView (viewModule, value) {
     App.framework7.views.create.and.callThrough();
   }
 
-  if(viewModule.init.and) {
+  if (viewModule.init.and) {
     viewModule.init.and.stub();
     viewModule.init.calls.reset();
   }
 }
 
+export function resetView(viewModule) {
+  setView(viewModule, null);
+}
+
 export default {
   resetView,
-  setView
-}
+  setView,
+};
