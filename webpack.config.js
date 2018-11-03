@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
-    './src/app.js'
+    './src/index.js'
   ],
   devServer: {
     contentBase: './dist'
